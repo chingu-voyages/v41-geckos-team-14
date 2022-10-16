@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.input{
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
