@@ -37,6 +37,11 @@
   }
 }
 
+.input{
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
 .button {
   padding: 20px;
   background-image: linear-gradient(#1852b0, #9611c6);
