@@ -4,7 +4,7 @@ import './App.css';
 const Input = ({ label, type, name, value, placeholder, handleChange }) => (
     <label>{label}
         <input
-            class="input"
+            className="input"
             type={type}
             name={name}
             value={value}
