@@ -6,17 +6,10 @@ import Login from './pages/login';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Landing></Landing>
-    // </div>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />}>
-          <Route index element={<Login />} />
-          <Route path="login" element={<Login />} />
-          <Route path="login" element={<Login />} />
-          <Route path="*" element={<Login />} />
-        </Route>
+        <Route exact path="/" element={<Landing />}></Route>
+        <Route exact path="/login" element={<Login />} > </Route>
       </Routes>
     </BrowserRouter>
   );
