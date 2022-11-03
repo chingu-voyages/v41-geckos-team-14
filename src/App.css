@@ -30,24 +30,28 @@ html {
   height: 500px;
 }
 
-.login-page {
+.login-page,
+.signup-page {
   color: white;
 }
 
-.login-heading {
+.login-heading,
+.signup-heading {
   position: absolute;
   top: 40px;
   left: 45%;
 }
 
-.login-description {
+.login-description,
+.signup-description {
   font-size: 24px;
   position: absolute;
   top: 120px;
   left: 40%;
 }
 
-.login-group {
+.login-group,
+.signup-group {
   display: flex;
   justify-content: center;
   flex-flow: column;
