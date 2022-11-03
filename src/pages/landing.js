@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../App.css';
 import Button from "../component/button";
-import './App.css';
-import Button from "./button";
-import productive from "./img/landing-page-mobile.png";
+import productive from "../img/landing-page-mobile.png";
 
 function Landing() {
 
