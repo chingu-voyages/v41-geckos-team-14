@@ -1,7 +1,7 @@
 import React from "react";
-import './App.css';
-import Input from "./input";
-import Button from "./button";
+import '../App.css';
+import Input from "../component/input";
+import Button from "../component/button";
 
 function Login() {
 
