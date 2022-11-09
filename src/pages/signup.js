@@ -7,7 +7,7 @@ function Signup() {
 
     return(
         <div className="main signup-page">
-            <h1 className="signup-heading">Log In Here</h1>
+            <h1 className="signup-heading">Register Here</h1>
             <p className="signup-description">Enter a username, your email and a password to sing up</p>
             <div className="signup-group">
                 <Input label="Username:" type="text"></Input>

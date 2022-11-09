@@ -14,7 +14,6 @@ function Landing() {
             <div className="landing-buttons">
                 <Link to="/login" ClassName=""><Button label="Log In"></Button></Link>
                 <Link to="/signup" ClassName=""><Button label="Sign Up"></Button></Link>
-                
             </div>
         </div>
     )
