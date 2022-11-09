@@ -1,19 +1,27 @@
 import React from "react";
+import { useState } from "react";
 import '../App.css';
 import Input from "../component/input";
 import Button from "../component/button";
+import { render } from "@testing-library/react";
 
-export default class Login extends React.Component {
+class Login extends React.Component {
 
-    state = {
-        loading: true
-    };
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
 
-    async componentDidMount() {
-        const url = "https://todoapi.fly.dev/api/login";
-        const response = await fetch(url, { mode: 'cors' });
-        const data = await response.json();
-        console.log(data);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
+
+    handleSubmit(event) {
+        console.log(`A name was submitted: ${this.state.value}`);
+        event.preventDefault();
     }
 
     render() {
@@ -21,15 +29,16 @@ export default class Login extends React.Component {
             <div className="main login-page">
                 <h1 className="login-heading">Log In Here</h1>
                 <p className="login-description">Enter your user name and password to log in.</p>
-                <div className="login-group">
-                    <Input label="User Name:" type="text"></Input>
-                    <Input label="Password:" type="text"></Input>
-                    <Button className="button login-button" label="Log In"></Button>
-                    <div>
-                        {this.state.loading ? <div>Loading ...</div> : <div>Data is here!</div>}
+                <form onSubmit={this.handleSubmit}>
+                    <div className="login-group">
+                        <Input label="User Name:" type="text" value={this.state.value} onChange={this.handleChange}></Input>
+                        {/*<Input label="Password:" type="text" value={password} defaultValue={""} onChange={console.log(this)}></Input>*/}
+                        <Button className="button login-button" label="Log In" type="submit"></Button>
                     </div>
-                </div>
+                </form>
             </div>
         )
     }
 }
+
+export default Login;
