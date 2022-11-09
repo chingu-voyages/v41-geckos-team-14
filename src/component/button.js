@@ -1,14 +1,9 @@
 import React from 'react';
-import './App.css';
-
-const buttonStyle = {
-  margin: '20px'
-};
+import '../App.css';
 
 const Button = ({ label, handleClick }) => (
   <button
     className="button"
-    style={buttonStyle}
     onClick={handleClick}
   >
     {label}

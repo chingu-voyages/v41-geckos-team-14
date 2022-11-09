@@ -1,16 +1,14 @@
 
 import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import AddTask from './components/AddTask';
-import UpdateTask from './components/UpdateTask';
-import DisplayTodo from './components/DisplayTodo';
+import AddTask from '../component/AddTask';
+import UpdateTask from '../component/UpdateTask';
+import DisplayTodo from '../component/DisplayTodo';
 
-import './TodoApp.css'
+import React from 'react';
+import "../TodoApp.css";
 
 const TodoApp = () => {
-
-
-
     const [todo, setTodo] = useState([
        
       ]);
@@ -85,7 +83,7 @@ const TodoApp = () => {
       }
     
       return (
-        <>
+        <div className='TodoApp.css' >
     
         <br/> <br/>
         <h2>To-do App Dashboard</h2>
@@ -132,7 +130,7 @@ const TodoApp = () => {
 
         />
     
-        </>
+        </div>
       );
 }
 
