@@ -1,14 +1,10 @@
-html {
-  background: url(img/login-signup-desktop.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-size: 20px;
-}
+
 
 .landing-page {
   color: white;
+  background: url(img/login-signup-desktop.png) no-repeat center center fixed;
+  font-size: 20px;
+  background-size: cover;
 }
 
 .landing-heading {
@@ -183,6 +179,7 @@ html {
   
 }
 
+<<<<<<< HEAD
 /*  #24262C 
     #292B31
 */
@@ -220,3 +217,5 @@ html {
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-dropping {
   border: none;
 }
+=======
+>>>>>>> 118db982963ff71efcd8fd29c82d6b4c7467c3d8
