@@ -5,6 +5,7 @@
   background: url(img/login-signup-desktop.png) no-repeat center center fixed;
   font-size: 20px;
   background-size: cover;
+
 }
 
 .landing-heading {
@@ -179,10 +180,7 @@
   
 }
 
-<<<<<<< HEAD
-/*  #24262C 
-    #292B31
-*/
+/* kanban-board */
 
 .e-kanban,
 .e-kanban .e-kanban-table,
@@ -217,5 +215,4 @@
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-dropping {
   border: none;
 }
-=======
->>>>>>> 118db982963ff71efcd8fd29c82d6b4c7467c3d8
+
