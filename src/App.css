@@ -182,3 +182,41 @@ html {
   }
   
 }
+
+/*  #24262C 
+    #292B31
+*/
+
+.e-kanban,
+.e-kanban .e-kanban-table,
+.e-kanban .e-kanban-header .e-header-cells {
+  background-color: #2A2B2F;
+}
+
+.e-kanban .e-kanban-header .e-header-cells .e-header-text,
+.e-kanban .e-kanban-table.e-content-table .e-card .e-card-content,
+.e-kanban .e-kanban-table .e-header-cells .e-item-count,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells.e-collapsed .e-collapse-header-text,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title,
+.e-kanban .e-kanban-table.e-content-table .e-card .e-card-header,
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-empty-card {
+  color: #fff;
+}
+
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card {
+  background-color: #292B31;
+}
+
+.e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) .e-content-cells {
+  background-color: #24262C;
+}
+
+.e-kanban .e-kanban-table .e-header-cells .e-column-collapse {
+  background-color: red;
+  color: blue;
+  border: 2px solid yellow;
+}
+
+.e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-dropping {
+  border: none;
+}
