@@ -217,3 +217,13 @@ html {
   border: none;
 }
 
+.e-kanban .e-kanban-table.e-content-table .e-card .e-card-tag.e-card-label {
+  background-color: #353536;
+  color: #fff;
+  letter-spacing: 0.05rem;
+}
+
+.e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card .e-card-header .e-card-header-title {
+  text-decoration: underline;
+  letter-spacing: 0.05rem;
+}
