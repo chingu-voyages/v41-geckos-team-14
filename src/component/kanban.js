@@ -10,7 +10,13 @@ function Kanban() {
             id="kanban"
             keyField="Status"
             dataSource={kanbanData}
-            cardSettings={{ contentField: "Summary", headerField: "Id", selectionType: "Multiple" }}
+            cardSettings={{ 
+                headerField: "Id",
+                contentField: "Summary",
+                selectionType: "Multiple",
+                grabberField: "Color",
+                tagsField: "Tags"
+            }}
             width="100%" height="100%"
         >
             <ColumnsDirective>
