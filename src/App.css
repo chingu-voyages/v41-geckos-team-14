@@ -202,6 +202,7 @@ html {
 .e-kanban .e-kanban-table.e-content-table .e-card .e-card-header,
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-empty-card {
   color: #fff;
+  text-align: start;
 }
 
 .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card {
@@ -210,12 +211,6 @@ html {
 
 .e-kanban .e-kanban-table.e-content-table .e-content-row:not(.e-swimlane-row) .e-content-cells {
   background-color: #24262C;
-}
-
-.e-kanban .e-kanban-table .e-header-cells .e-column-collapse {
-  background-color: red;
-  color: blue;
-  border: 2px solid yellow;
 }
 
 .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-dropping {
