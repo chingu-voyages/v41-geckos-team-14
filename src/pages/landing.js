@@ -13,7 +13,9 @@ function Landing() {
             <img className="productive-woman" src={productive} alt="Woman with task items"/>
             <div className="landing-buttons">
                 <Link to="/login" ClassName=""><Button label="Log In"></Button></Link>
-                <Link to="/signup" ClassName=""><Button label="Sign Up"></Button></Link>
+                <Link to="/signup" ClassName=""><Button label="Sign Up"></Button></Link>                
+                <Link to="/dashboard" ClassName=""><Button label="Dashboard"></Button></Link>                
+                <Link to="/TodoApp" ClassName=""><Button label="Todo"></Button></Link>                
             </div>
         </div>
     )
