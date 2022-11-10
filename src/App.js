@@ -7,6 +7,8 @@ import Signup from './pages/signup';
 import React from 'react';
 import TodoApp from './pages/TodoApp';
 
+
+
 function App() {
 
 
@@ -16,6 +18,7 @@ function App() {
         <Route exact path="/" element={<Landing />}></Route>
         <Route exact path="/login" element={<Login />} > </Route>
         <Route exact path="/signup" element={<Signup />} > </Route>
+        
         <Route exact path="/todo" element={<TodoApp />} > </Route>
       </Routes>
     </BrowserRouter>
