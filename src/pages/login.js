@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../App.css';
 import Button from "../component/button";
 
@@ -29,10 +29,7 @@ function Login() {
         try {
             let res = await fetch("https://todoapi.fly.dev/api/login", {
                 method: "POST",
-                body: JSON.stringify({
-                    username: username,
-                    password: password
-                }),
+                body: JSON.stringify(loginData),
             });
             if (res.status === 200) {
                 console.log(res.status);
