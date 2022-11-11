@@ -1,44 +1,47 @@
 import React from "react";
 import { useState } from "react";
 import '../App.css';
-import Input from "../component/input";
 import Button from "../component/button";
-import { render } from "@testing-library/react";
 
-class Login extends React.Component {
+function Login() {
 
-    constructor(props) {
-        super(props);
-        this.state = {value: ''};
+    const [userName, setUserName] = useState("");
+    const [password, setPassword] = useState("");
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+    const onSubmit = (event) => {
+            event.preventDefault();
+            console.log("I am submitting: " + userName);
+            console.log("I am submitting: " + password);
+        }
+    
+    const handleUsernameChange = (event) => {
+        setUserName(event.target.value);
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
+    const handlePasswordChange = (event) => {
+        setPassword(event.target.value);
     }
 
-    handleSubmit(event) {
-        console.log(`A name was submitted: ${this.state.value}`);
-        event.preventDefault();
-    }
-
-    render() {
-        return(
-            <div className="main login-page">
-                <h1 className="login-heading">Log In Here</h1>
-                <p className="login-description">Enter your user name and password to log in.</p>
-                <form onSubmit={this.handleSubmit}>
-                    <div className="login-group">
-                        <Input label="User Name:" type="text" value={this.state.value} onChange={this.handleChange}></Input>
-                        {/*<Input label="Password:" type="text" value={password} defaultValue={""} onChange={console.log(this)}></Input>*/}
-                        <Button className="button login-button" label="Log In" type="submit"></Button>
+    return(
+        <div className="main login-page">
+            <h1 className="login-heading">Log In Here</h1>
+            <p className="login-description">Enter your user name and password to log in.</p>
+            <form onSubmit={onSubmit}>
+                <div className="login-group">
+                    <label>
+                        User Name: <input className="input" name="username" type="text" value={userName} onChange={handleUsernameChange}/>
+                    </label>
+                    <label>
+                        Password: <input className="input" name="password" type="text" value={password} onChange={handlePasswordChange}/>
+                    </label>
+                    <Button className="button login-button" label="Log In" type="submit" ></Button>
+                    <div>
+                        <p>You say: {userName}, {password}</p>
                     </div>
-                </form>
-            </div>
-        )
-    }
-}
+                </div>
+            </form>
+        </div>
+    );
+};
 
 export default Login;
