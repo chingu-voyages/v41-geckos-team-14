@@ -29,6 +29,9 @@ function Login() {
         try {
             let res = await fetch("https://todoapi.fly.dev/api/login", {
                 method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                  },
                 body: JSON.stringify(loginData),
             });
             if (res.status === 200) {
