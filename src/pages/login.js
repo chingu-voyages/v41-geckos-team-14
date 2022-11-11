@@ -1,12 +1,30 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../App.css';
 import Button from "../component/button";
 
 function Login() {
 
+    // Define variables in state
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
+    const [postId, setPostId] = useState(null);
+
+    // Make API Post call with React hook useEffect (code modified from https://jasonwatmore.com/post/2020/02/01/react-fetch-http-post-request-examples)
+    useEffect(() => {
+        // POST request using fetch inside useEffect React hook
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title: 'React Hooks POST Request Example' })
+        };
+        fetch('https://reqres.in/api/posts', requestOptions)
+            .then(response => response.json())
+            .then(data => setPostId(data.id));
+
+    // empty dependency array means this effect will only run once (like componentDidMount in classes)
+    }, []);
+
+    //Add functions to handle the data from the input fields
 
     const onSubmit = (event) => {
             event.preventDefault();
@@ -37,6 +55,7 @@ function Login() {
                     <Button className="button login-button" label="Log In" type="submit" ></Button>
                     <div>
                         <p>You say: {userName}, {password}</p>
+                        <p>Returned Id: {postId}</p>
                     </div>
                 </div>
             </form>
