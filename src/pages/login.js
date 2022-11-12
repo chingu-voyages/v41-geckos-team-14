@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css';
 import Button from "../component/button";
+import { Link } from "react-router-dom";
 
 function Login() {
 
@@ -8,6 +9,8 @@ function Login() {
     const [username, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    const [dashboardLink, setDashboardLink] = useState("");
+    const [todoLink, setTodoLink] = useState("");
 
     //Add functions to handle the data from the input fields
     const handleUsernameChange = (event) => {
@@ -21,10 +24,6 @@ function Login() {
     const onSubmit = async (event) => {
         event.preventDefault();
         const loginData = {username, password}
-        console.log("User name is: " + username);
-        console.log(typeof username);
-        console.log("Password is: " + password);
-        console.log(typeof password);
 
         try {
             let res = await fetch("https://todoapi.fly.dev/api/login", {
@@ -35,12 +34,17 @@ function Login() {
                 body: JSON.stringify(loginData),
             });
             if (res.status === 200) {
-                console.log(res.status);
-                setMessage("User logged in successfully");
+                setMessage("User logged in successfully.");
+                setDashboardLink(<Link to="/dashboard" className=""><Button label="Dashboard"></Button></Link>);
+                setTodoLink(<Link to="/TodoApp" className=""><Button label="To-Do-List"></Button></Link>);
             } else if (res.status === 422) {
-                setMessage("Invalid credentials.");
+                setMessage("Invalid credentials. Try again!");
+                setDashboardLink("");
+                setTodoLink("");
             } else {
-                setMessage("Some error occured");
+                setMessage("Some error occured.");
+                setDashboardLink("");
+                setTodoLink("");
             }
           } catch (error) {
                 console.log(error);
@@ -62,6 +66,8 @@ function Login() {
                     <Button className="button login-button" label="Log In" type="submit" ></Button>
                     <div>
                         <p>Login status: {message}</p>
+                        {dashboardLink}
+                        {todoLink}
                     </div>
                 </div>
             </form>
