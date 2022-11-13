@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Landing from './pages/landing';
 import Login from './pages/login';
 import Signup from './pages/signup';
@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route exact path="/" element={<Landing />}></Route>
         <Route exact path="/login" element={<Login />} > </Route>
@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/dashboard" element={<Dashboard />} > </Route>
         <Route exact path="/TodoApp" element={<TodoApp />} > </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 
 }
