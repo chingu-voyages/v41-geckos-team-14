@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Geckos 14 To-Do-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was created by geckos team 14 for the Chingu Voyage 41. It is a to-do-list app in which you can add, edit and delete tasks.
 
-## Available Scripts
+**LIVE LINK: https://chingu-voyages.github.io/v41-geckos-team-14/**
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Logging in correctly at the login page allows you to go to the kanban dashboard or to the to-do-list app. (The correct user name is at the moment "string" and the correct password is also "string".)
+- In the to-do-app, you can add new tasks, update tasks by editing them or delete them.
+- Use the kanban dashboard to drag and drop some given tasks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project explanation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our group started out with the plan to make a project management app with the feature of making, editing and deleting to-do items as one of its core functionalities. Most developers of the group signed up to be in a tier 2 (Geckos) team, aiming to do a project centered around the React library. All were front end developers without any back end experience. However, one of our team members had originally signed up for a tier 3 (Bears) team project and was accidentally assigned to our tier 2 group.
 
-### `npm test`
+So our team decided that we will make the best of the situation and try to use this as a learning chance. The original plan was to build a simple to-do list app, with maybe also a kanban board - a log in and sign up page were rather a "nice to have" feature. We added the log in page and the sign up page as "should have" features so that our tier 3 group member could get the chance to develop an API that we could potentially use as the backend for the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+During our work with the API, it proved to be more difficult to connect the different pages with the backend than we thought. The login page makes a successful post call to the API and uses the answer to change the UI (displaying or hiding buttons that lead to the kanban board or the to-do list app). The other pages (sign up, kanban dashboard, to-do app) aren't connected to the API yet.
 
-### `npm run build`
+The planned core functionality of the project (managing to-do-lists) works fine and the user can even drag and drop some hard coded tasks on the kanban board. We wanted to involve the API calls more than we did, but everyone learned valuable lessons from this project. We dared to leave our comfort zones and grew a lot, especially as a team.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech used / Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React.js](https://reactjs.org/)
+- Our project was ootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+- Icons from [Font awesome](https://fontawesome.com/)
+- Background image taken from [Figma](https://www.figma.com/)
+- [API](https://todoapi.fly.dev/api-docs/index.html) coded by [@Cerdtruir](https://github.com/Cerdtruir). The API is hosted on [Fly.io](https://fly.io/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development mode
 
-### `npm run eject`
+In the project directory, run `npm start` in the terminal to start the app in development mode.
+Go to [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [@ellrub](https://github.com/ellrub)
+- [@DanielaKuester](https://github.com/DanielaKuester)
+- [@hemahafez01](https://github.com/hemahafez01)
+- [@frugalcodes](https://github.com/frugalcodes)
+- [@Cerdtruir](https://github.com/Cerdtruir)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This repository is a Chingu Voyage Project exclusive to the Team "Geckos 14". Therefore, we will most likely not accept pull requests.
