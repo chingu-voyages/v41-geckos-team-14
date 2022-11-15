@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/v41-geckos-team-14/static/css/main.b3d81ee6.css",
+    "main.js": "/v41-geckos-team-14/static/js/main.0dd79c51.js",
+    "static/media/login-signup-desktop.png": "/v41-geckos-team-14/static/media/login-signup-desktop.476ff466b2d4faaed210.png",
+    "static/media/landing-page-mobile.png": "/v41-geckos-team-14/static/media/landing-page-mobile.b30d34f88d8ca23e892c.png",
+    "index.html": "/v41-geckos-team-14/index.html",
+    "main.b3d81ee6.css.map": "/v41-geckos-team-14/static/css/main.b3d81ee6.css.map",
+    "main.0dd79c51.js.map": "/v41-geckos-team-14/static/js/main.0dd79c51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3d81ee6.css",
+    "static/js/main.0dd79c51.js"
+  ]
+}
