@@ -25,7 +25,7 @@ The planned core functionality of the project (managing to-do-lists) works fine 
 - [React.js](https://reactjs.org/)
 - Our project was ootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 - Icons from [Font awesome](https://fontawesome.com/)
-- Background image taken from [Figma](https://www.canva.com/)
+- Background image taken from [Figma](https://www.figma.com/)
 - [API](https://todoapi.fly.dev/api-docs/index.html) coded by [@Cerdtruir](https://github.com/Cerdtruir). The API is hosted on [Fly.io](https://fly.io/).
 
 ## Development mode
